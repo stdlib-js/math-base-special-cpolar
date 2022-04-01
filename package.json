@@ -1,0 +1,42 @@
+{
+  "name": "@stdlib/math-base-special-cpolar",
+  "version": "0.0.0",
+  "description": "Compute the absolute value and the phase of a complex number.",
+  "license": "Apache-2.0",
+  "main": "./bundle.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/math-base-special-cpolar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "mathematics",
+    "math",
+    "math.abs",
+    "cabs",
+    "abs",
+    "absolute",
+    "magnitude",
+    "modulus",
+    "distance",
+    "cphase",
+    "phase",
+    "argument",
+    "arg",
+    "carg",
+    "angle",
+    "polar",
+    "complex",
+    "cmplx",
+    "number"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
