@@ -30,32 +30,30 @@ limitations under the License.
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-base-special-cpolar
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-cpolar = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cpolar@umd/bundle.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cpolar@umd/bundle.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.cpolar;
-})();
-</script>
+var cpolar = require( '@stdlib/math-base-special-cpolar' );
 ```
 
 #### cpolar( \[out,] re, im )
@@ -91,18 +89,13 @@ var bool = ( o === out );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64@umd/bundle.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/bundle.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@umd/bundle.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/complex-real@umd/bundle.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/complex-imag@umd/bundle.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cpolar@umd/bundle.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var Complex128 = require( '@stdlib/complex-float64' );
+var randu = require( '@stdlib/random-base-randu' );
+var round = require( '@stdlib/math-base-special-round' );
+var real = require( '@stdlib/complex-real' );
+var imag = require( '@stdlib/complex-imag' );
+var cpolar = require( '@stdlib/math-base-special-cpolar' );
 
 var re;
 var im;
@@ -118,11 +111,6 @@ for ( i = 0; i < 100; i++ ) {
     z = z.toString();
     console.log( 'abs(%s) = %d. arg(%s) = %d', z, o[0], z, o[1] );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -209,18 +197,19 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [deno-url]: https://github.com/stdlib-js/math-base-special-cpolar/tree/deno
 [umd-url]: https://github.com/stdlib-js/math-base-special-cpolar/tree/umd
 [esm-url]: https://github.com/stdlib-js/math-base-special-cpolar/tree/esm
+[branches-url]: https://github.com/stdlib-js/math-base-special-cpolar/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/math-base-special-cpolar/main/LICENSE
 
-[@stdlib/math/base/special/cabs]: https://github.com/stdlib-js/math-base-special-cabs/tree/umd
+[@stdlib/math/base/special/cabs]: https://github.com/stdlib-js/math-base-special-cabs
 
-[@stdlib/math/base/special/cphase]: https://github.com/stdlib-js/math-base-special-cphase/tree/umd
+[@stdlib/math/base/special/cphase]: https://github.com/stdlib-js/math-base-special-cphase
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/cabs]: https://github.com/stdlib-js/math-base-special-cabs/tree/umd
+[@stdlib/math/base/special/cabs]: https://github.com/stdlib-js/math-base-special-cabs
 
-[@stdlib/math/base/special/cphase]: https://github.com/stdlib-js/math-base-special-cphase/tree/umd
+[@stdlib/math/base/special/cphase]: https://github.com/stdlib-js/math-base-special-cphase
 
 <!-- </related-links> -->
 
