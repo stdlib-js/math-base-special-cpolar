@@ -40,7 +40,8 @@
     "@stdlib/complex-float64": "^0.0.8",
     "@stdlib/math-base-special-cabs": "^0.0.7",
     "@stdlib/math-base-special-cphase": "^0.0.6",
-    "@stdlib/types": "^0.0.14"
+    "@stdlib/types": "^0.0.14",
+    "@stdlib/error-tools-fmtprodmsg": "^0.0.2"
   },
   "devDependencies": {
     "@stdlib/array-float64": "^0.0.6",
