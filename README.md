@@ -48,13 +48,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import cpolar from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cpolar@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-base-special-cpolar/tags). For example,
+
+```javascript
 import cpolar from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cpolar@v0.0.6-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cpolar@v0.0.6-deno/mod.js';
+import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cpolar@deno/mod.js';
 ```
 
 #### cpolar( z )
@@ -101,7 +106,7 @@ import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/
 import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@deno/mod.js';
 import real from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-real@deno/mod.js';
 import imag from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-imag@deno/mod.js';
-import cpolar from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cpolar@v0.0.6-deno/mod.js';
+import cpolar from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cpolar@deno/mod.js';
 
 var re;
 var im;
