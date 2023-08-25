@@ -18,11 +18,22 @@ limitations under the License.
 
 -->
 
-# polar
+
+<details>
+  <summary>
+    About stdlib...
+  </summary>
+  <p>We believe in a future in which the web is a preferred environment for numerical computation. To help realize this future, we've built stdlib. stdlib is a standard library, with an emphasis on numerical and scientific computation, written in JavaScript (and C) for execution in browsers and in Node.js.</p>
+  <p>The library is fully decomposable, being architected in such a way that you can swap out and mix and match APIs and functionality to cater to your exact preferences and use cases.</p>
+  <p>When you use stdlib, you can be absolutely certain that you are using the most thorough, rigorous, well-written, studied, documented, tested, measured, and high-quality code out there.</p>
+  <p>To join us in bringing numerical computing to the web, get started by checking us out on <a href="https://github.com/stdlib-js/stdlib">GitHub</a>, and please consider <a href="https://opencollective.com/stdlib">financially supporting stdlib</a>. We greatly appreciate your continued support!</p>
+</details>
+
+# cpolar
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
-> Compute the [absolute value][@stdlib/math/base/special/cabs] and [phase][@stdlib/math/base/special/cphase] of a complex number.
+> Compute the [absolute value][@stdlib/math/base/special/cabs] and [phase][@stdlib/math/base/special/cphase] of a double-precision complex floating-point number.
 
 <section class="intro">
 
@@ -30,60 +41,57 @@ limitations under the License.
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-base-special-cpolar
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
+```javascript
+var cpolar = require( '@stdlib/math-base-special-cpolar' );
+```
+
+#### cpolar( z )
+
+Computes the [absolute value][@stdlib/math/base/special/cabs] and [phase][@stdlib/math/base/special/cphase] of a double-precision complex floating-point number.
 
 ```javascript
-cpolar = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cpolar@umd/browser.js' )
-```
+var Complex128 = require( '@stdlib/complex-float64' );
 
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var cpolar = require( 'path/to/vendor/umd/math-base-special-cpolar/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cpolar@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.cpolar;
-})();
-</script>
-```
-
-#### cpolar( \[out,] re, im )
-
-Computes the [absolute value][@stdlib/math/base/special/cabs] and [phase][@stdlib/math/base/special/cphase] of a complex number comprised of a **real** component `re` and an **imaginary** component `im`.
-
-```javascript
-var o = cpolar( 5.0, 3.0 );
+var o = cpolar( new Complex128( 5.0, 3.0 ) );
 // returns [ ~5.83, ~0.5404 ]
 ```
 
-By default, the function returns real and imaginary components as a two-element `array`. To avoid unnecessary memory allocation, the function supports providing an output (destination) object.
+#### cpolar.assign( z, out, stride, offset )
+
+Computes the [absolute value][@stdlib/math/base/special/cabs] and [phase][@stdlib/math/base/special/cphase] of a double-precision complex floating-point number and assigns results to a provided output array.
 
 ```javascript
+var Complex128 = require( '@stdlib/complex-float64' );
 var Float64Array = require( '@stdlib/array-float64' );
 
 var out = new Float64Array( 2 );
 
-var o = cpolar( out, 5.0, 3.0 );
+var v = cpolar.assign( new Complex128( 5.0, 3.0 ), out, 1, 0 );
 // returns <Float64Array>[ ~5.83, ~0.5404 ]
 
-var bool = ( o === out );
+var bool = ( v === out );
 // returns true
 ```
 
@@ -97,18 +105,13 @@ var bool = ( o === out );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/complex-real@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/complex-imag@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cpolar@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var Complex128 = require( '@stdlib/complex-float64' );
+var randu = require( '@stdlib/random-base-randu' );
+var round = require( '@stdlib/math-base-special-round' );
+var real = require( '@stdlib/complex-real' );
+var imag = require( '@stdlib/complex-imag' );
+var cpolar = require( '@stdlib/math-base-special-cpolar' );
 
 var re;
 var im;
@@ -120,20 +123,119 @@ for ( i = 0; i < 100; i++ ) {
     re = round( randu()*100.0 ) - 50.0;
     im = round( randu()*100.0 ) - 50.0;
     z = new Complex128( re, im );
-    o = cpolar( real(z), imag(z) );
+    o = cpolar( z );
     z = z.toString();
     console.log( 'abs(%s) = %d. arg(%s) = %d', z, o[0], z, o[1] );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/cpolar.h"
+```
+
+#### stdlib_base_cpolar( z, cabs, cphase )
+
+Computes the [absolute value][@stdlib/math/base/special/cabs] and [phase][@stdlib/math/base/special/cphase] of a double-precision complex floating-point number.
+
+```c
+#include "stdlib/complex/float64.h"
+#include "stdlib/complex/real.h"
+#include "stdlib/complex/imag.h"
+
+stdlib_complex128_t z = stdlib_complex128( 5.0, 3.0 );
+double cabs;
+double cphase;
+stdlib_base_cpolar( z, &cabs, &cphase );
+```
+
+The function accepts the following arguments:
+
+-   **z**: `[in] stdlib_complex128_t` input value.
+-   **cabs**: `[out] double*` destination for the absolute value.
+-   **cphase**: `[out] double*` destination for the phase value in radians.
+
+```c
+double stdlib_base_cpolar( const stdlib_complex128_t z, double *cabs, double *cphase );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/cpolar.h"
+#include "stdlib/complex/float64.h"
+#include "stdlib/complex/reim.h"
+#include <stdio.h>
+
+int main( void ) {
+    const stdlib_complex128_t x[] = {
+        stdlib_complex128( 3.14, 1.0 ),
+        stdlib_complex128( -3.14, -1.0 ),
+        stdlib_complex128( 0.0, 0.0 ),
+        stdlib_complex128( 0.0/0.0, 0.0/0.0 )
+    };
+
+    double cphase;
+    double cabs;
+    double re;
+    double im;
+    int i;
+    for ( i = 0; i < 12; i++ ) {
+        stdlib_base_cpolar( x[i], &cabs, &cphase );
+        stdlib_reim( x[i], &re, &im );
+        printf( "cpolar(%lf + %lfi) => cabs: %lf, cphase: %lf\n", re, im, cabs, cphase );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -219,15 +321,11 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/math-base-special-cpolar/main/LICENSE
 
-[@stdlib/math/base/special/cabs]: https://github.com/stdlib-js/math-base-special-cabs/tree/umd
+[@stdlib/math/base/special/cabs]: https://github.com/stdlib-js/math-base-special-cabs
 
-[@stdlib/math/base/special/cphase]: https://github.com/stdlib-js/math-base-special-cphase/tree/umd
+[@stdlib/math/base/special/cphase]: https://github.com/stdlib-js/math-base-special-cphase
 
 <!-- <related-links> -->
-
-[@stdlib/math/base/special/cabs]: https://github.com/stdlib-js/math-base-special-cabs/tree/umd
-
-[@stdlib/math/base/special/cphase]: https://github.com/stdlib-js/math-base-special-cphase/tree/umd
 
 <!-- </related-links> -->
 
