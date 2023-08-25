@@ -16,25 +16,25 @@
 * limitations under the License.
 */
 
-'use strict';
+#ifndef STDLIB_MATH_BASE_SPECIAL_CPOLAR_H
+#define STDLIB_MATH_BASE_SPECIAL_CPOLAR_H
 
-// MODULES //
+#include "stdlib/complex/float64.h"
 
-var tape = require( 'tape' );
-var hasOwnProp = require( '@stdlib/assert-has-own-property' );
-var cpolar = require( './../lib' );
+/*
+* If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
+*/
+#ifdef __cplusplus
+extern "C" {
+#endif
 
+/**
+* Computes the absolute value and the phase of a double-precision complex floating-point number.
+*/
+void stdlib_base_cpolar( const stdlib_complex128_t z, double *cabs, double *cphase );
 
-// TESTS //
+#ifdef __cplusplus
+}
+#endif
 
-tape( 'main export is a function', function test( t ) {
-	t.ok( true, __filename );
-	t.strictEqual( typeof cpolar, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'attached to the main export is an `assign` method', function test( t ) {
-	t.strictEqual( hasOwnProp( cpolar, 'assign' ), true, 'has property' );
-	t.strictEqual( typeof cpolar.assign, 'function', 'has method' );
-	t.end();
-});
+#endif // !STDLIB_MATH_BASE_SPECIAL_CPOLAR_H
