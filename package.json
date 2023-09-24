@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/math-base-special-cpolar",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "description": "Compute the absolute value and the phase of a double-precision complex floating-point number.",
   "license": "Apache-2.0",
   "author": {
@@ -40,25 +40,25 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/complex-float64": "^0.0.8",
-    "@stdlib/complex-reim": "^0.0.6",
-    "@stdlib/math-base-special-cabs": "^0.0.7",
-    "@stdlib/math-base-special-cphase": "^0.0.6",
-    "@stdlib/napi-argv": "github:stdlib-js/napi-argv#main",
-    "@stdlib/types": "^0.0.14",
-    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.0.7",
-    "@stdlib/utils-library-manifest": "^0.0.8"
+    "@stdlib/complex-float64": "^0.1.0",
+    "@stdlib/complex-reim": "^0.1.0",
+    "@stdlib/math-base-special-cabs": "^0.1.0",
+    "@stdlib/math-base-special-cphase": "^0.1.0",
+    "@stdlib/napi-argv": "^0.1.0",
+    "@stdlib/types": "^0.1.0",
+    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.1.0",
+    "@stdlib/utils-library-manifest": "^0.1.0"
   },
   "devDependencies": {
-    "@stdlib/array-float64": "^0.0.6",
-    "@stdlib/assert-has-own-property": "^0.0.7",
-    "@stdlib/assert-is-array": "^0.0.7",
-    "@stdlib/bench": "^0.0.12",
-    "@stdlib/math-base-assert-is-nan": "^0.0.8",
-    "@stdlib/math-base-special-round": "^0.0.7",
+    "@stdlib/array-float64": "^0.1.0",
+    "@stdlib/assert-has-own-property": "^0.1.0",
+    "@stdlib/assert-is-array": "^0.1.0",
+    "@stdlib/bench": "^0.1.0",
+    "@stdlib/math-base-assert-is-nan": "^0.1.0",
+    "@stdlib/math-base-special-round": "^0.1.0",
     "@stdlib/random-base-randu": "^0.0.8",
     "@stdlib/random-base-uniform": "^0.0.6",
-    "@stdlib/utils-try-require": "^0.0.7",
+    "@stdlib/utils-try-require": "^0.1.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git"
