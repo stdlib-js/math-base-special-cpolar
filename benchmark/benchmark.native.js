@@ -21,7 +21,7 @@
 // MODULES //
 
 var resolve = require( 'path' ).resolve;
-var bench = require( '@stdlib/bench' );
+var bench = require( '@stdlib/bench-harness' );
 var uniform = require( '@stdlib/random-base-uniform' );
 var isArray = require( '@stdlib/assert-is-array' );
 var Complex128 = require( '@stdlib/complex-float64' );
