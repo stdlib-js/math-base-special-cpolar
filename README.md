@@ -48,13 +48,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import cpolar from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cpolar@deno/mod.js';
+import cpolar from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cpolar@v0.2.0-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cpolar@deno/mod.js';
+import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cpolar@v0.2.0-deno/mod.js';
 ```
 
 #### cpolar( z )
@@ -101,7 +101,7 @@ import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/
 import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@deno/mod.js';
 import real from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-real@deno/mod.js';
 import imag from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-imag@deno/mod.js';
-import cpolar from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cpolar@deno/mod.js';
+import cpolar from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cpolar@v0.2.0-deno/mod.js';
 
 var re;
 var im;
