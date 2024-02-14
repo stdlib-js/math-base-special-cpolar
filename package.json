@@ -47,7 +47,8 @@
     "@stdlib/napi-argv": "^0.2.0",
     "@stdlib/types": "^0.3.1",
     "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.0",
-    "@stdlib/utils-library-manifest": "^0.2.0"
+    "@stdlib/utils-library-manifest": "^0.2.0",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.0"
   },
   "devDependencies": {
     "@stdlib/array-float64": "^0.1.1",
