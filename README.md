@@ -111,8 +111,8 @@ var bool = ( v === out );
 var Complex128 = require( '@stdlib/complex-float64-ctor' );
 var randu = require( '@stdlib/random-base-randu' );
 var round = require( '@stdlib/math-base-special-round' );
-var real = require( '@stdlib/complex-real' );
-var imag = require( '@stdlib/complex-imag' );
+var real = require( '@stdlib/complex-float64-real' );
+var imag = require( '@stdlib/complex-float64-imag' );
 var cpolar = require( '@stdlib/math-base-special-cpolar' );
 
 var re;
@@ -167,8 +167,8 @@ Computes the [absolute value][@stdlib/math/base/special/cabs] and [phase][@stdli
 
 ```c
 #include "stdlib/complex/float64/ctor.h"
-#include "stdlib/complex/real.h"
-#include "stdlib/complex/imag.h"
+#include "stdlib/complex/float64/real.h"
+#include "stdlib/complex/float64/imag.h"
 
 stdlib_complex128_t z = stdlib_complex128( 5.0, 3.0 );
 double cabs;
@@ -293,8 +293,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/math-base-special-cpolar.svg
 [npm-url]: https://npmjs.org/package/@stdlib/math-base-special-cpolar
 
-[test-image]: https://github.com/stdlib-js/math-base-special-cpolar/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/math-base-special-cpolar/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/math-base-special-cpolar/actions/workflows/test.yml/badge.svg?branch=v0.2.2
+[test-url]: https://github.com/stdlib-js/math-base-special-cpolar/actions/workflows/test.yml?query=branch:v0.2.2
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/math-base-special-cpolar/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/math-base-special-cpolar?branch=main
