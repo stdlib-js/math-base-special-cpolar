@@ -43,7 +43,7 @@
     "@stdlib/complex-float64-ctor": "^0.0.3",
     "@stdlib/complex-float64-reim": "^0.1.2",
     "@stdlib/math-base-special-cabs": "^0.2.2",
-    "@stdlib/math-base-special-cphase": "^0.2.1",
+    "@stdlib/math-base-special-cphase": "^0.2.2",
     "@stdlib/napi-argv": "^0.2.2",
     "@stdlib/types": "^0.3.2",
     "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.2",
