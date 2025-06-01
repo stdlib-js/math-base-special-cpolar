@@ -45,6 +45,9 @@
     "@stdlib/math-base-special-cabs": "^0.2.2",
     "@stdlib/math-base-special-cphase": "^0.2.2",
     "@stdlib/napi-argv": "^0.2.2",
+    "@stdlib/napi-argv-complex128": "^0.1.0",
+    "@stdlib/napi-argv-float64array": "^0.2.2",
+    "@stdlib/napi-export": "^0.2.2",
     "@stdlib/types": "^0.4.3",
     "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.2",
     "@stdlib/utils-library-manifest": "^0.2.2"
@@ -53,6 +56,7 @@
     "@stdlib/array-float64": "^0.2.2",
     "@stdlib/assert-has-own-property": "^0.2.2",
     "@stdlib/assert-is-array": "^0.2.2",
+    "@stdlib/assert-is-float64array": "^0.2.2",
     "@stdlib/math-base-assert-is-nan": "^0.2.2",
     "@stdlib/math-base-special-round": "^0.3.0",
     "@stdlib/random-base-randu": "^0.2.1",
