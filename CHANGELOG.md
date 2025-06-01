@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`f10839a`](https://github.com/stdlib-js/stdlib/commit/f10839a93d9dc6082a1a699d98dff51540603173) - **test:** update test messages _(by Karan Anand)_
 -   [`3830189`](https://github.com/stdlib-js/stdlib/commit/383018955516c08e11189d7afce9826976c60808) - **docs:** remove redundant imports _(by Karan Anand)_
 -   [`8a590f0`](https://github.com/stdlib-js/stdlib/commit/8a590f06152ebe5636942295ffdf0152a088fe1c) - **refactor:** use in-house macros for building native addon bindings _(by Karan Anand)_
 -   [`b89c97c`](https://github.com/stdlib-js/stdlib/commit/b89c97ce0b812ff0b2aab16b4d77969d44fe3e8c) - **docs:** resolve lint errors in TS declaration files _(by Philipp Burckhardt)_
