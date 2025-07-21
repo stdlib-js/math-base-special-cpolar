@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-14)
+## Unreleased (2025-07-21)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`95648a9`](https://github.com/stdlib-js/stdlib/commit/95648a99d72ad98c6d5bacd6e61b5d7bac5c8f16) - **docs:** remove duplicated complex in description _(by Philipp Burckhardt)_
 -   [`d6059e1`](https://github.com/stdlib-js/stdlib/commit/d6059e165da4f439309257fe617c00bde8a7feff) - **docs:** fix function signature _(by Karan Anand)_
 -   [`a2565fe`](https://github.com/stdlib-js/stdlib/commit/a2565fec6fc4f97c59a73f86819230c19449980d) - **refactor:** use tuple for return type _(by Karan Anand)_
 -   [`f10839a`](https://github.com/stdlib-js/stdlib/commit/f10839a93d9dc6082a1a699d98dff51540603173) - **test:** update test messages _(by Karan Anand)_
