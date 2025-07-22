@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-07-21)
+## Unreleased (2025-07-22)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`6b1f092`](https://github.com/stdlib-js/stdlib/commit/6b1f092e6558fe02988ffc03432f0f8804e01542) - **docs:** fix comment _(by Athan Reines)_
 -   [`95648a9`](https://github.com/stdlib-js/stdlib/commit/95648a99d72ad98c6d5bacd6e61b5d7bac5c8f16) - **docs:** remove duplicated complex in description _(by Philipp Burckhardt)_
 -   [`d6059e1`](https://github.com/stdlib-js/stdlib/commit/d6059e165da4f439309257fe617c00bde8a7feff) - **docs:** fix function signature _(by Karan Anand)_
 -   [`a2565fe`](https://github.com/stdlib-js/stdlib/commit/a2565fec6fc4f97c59a73f86819230c19449980d) - **refactor:** use tuple for return type _(by Karan Anand)_
@@ -30,8 +31,9 @@
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
+-   Athan Reines
 -   Karan Anand
 -   Philipp Burckhardt
 
