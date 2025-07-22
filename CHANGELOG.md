@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`9084ea7`](https://github.com/stdlib-js/stdlib/commit/9084ea7fd0e8f5dadec684f2b80bc796b8814cb7) - **docs:** fix comment _(by Athan Reines)_
 -   [`6b1f092`](https://github.com/stdlib-js/stdlib/commit/6b1f092e6558fe02988ffc03432f0f8804e01542) - **docs:** fix comment _(by Athan Reines)_
 -   [`95648a9`](https://github.com/stdlib-js/stdlib/commit/95648a99d72ad98c6d5bacd6e61b5d7bac5c8f16) - **docs:** remove duplicated complex in description _(by Philipp Burckhardt)_
 -   [`d6059e1`](https://github.com/stdlib-js/stdlib/commit/d6059e165da4f439309257fe617c00bde8a7feff) - **docs:** fix function signature _(by Karan Anand)_
